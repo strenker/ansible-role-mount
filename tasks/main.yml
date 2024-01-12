@@ -1,0 +1,26 @@
+---
+# tasks file for mount
+
+- name: Mount {{ mount_src }} to {{ mount_mountpoint }} {{ (mount_options == '')|bool|ternary('', "with options '" + mount_options + "'") }}
+  become: true
+  ansible.builtin.command:
+    cmd: >-
+      mount
+        {{ (mount_options == '')|bool|ternary('', '-o ' + mount_options) }}
+        {{ mount_src }}
+        {{ mount_mountpoint }}
+  register: mount_result
+  failed_when:
+    - (mount_result.rc in ___mount_other_errors and mount_may_fail) or (mount_result.rc != 0 and not mount_may_fail)
+
+- ansible.builtin.debug:
+    msg:
+      - "Return code: {{ mount_result.rc|default('n/a') }}"
+      - "Stdout: "
+      - "{{ mount_result.stdout_lines|default('') }}"
+      - "Stderr: "
+      - "{{ mount_result.stderr_lines|default('') }}"
+    verbosity: 1
+
+...
+# vim:ts=2:sw=2:expandtab
