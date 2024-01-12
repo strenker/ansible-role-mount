@@ -6,32 +6,32 @@ Simple version of Linix mount(8) command.
 Role Variables
 --------------
 
-**mount_src:**
+__**mount_src:**__
 
 Source path of what will me mounted.<br>
-Relative path names are relative to ansible_user
+Relative path names are relative to `remote_user`
 
-**mount_mountpoint:**
+__**mount_mountpoint:**__
 
 Destination directory where to be mounted. The directory must exist.<br>
 Relative path names are relative to ansible_user.
 
-**mount_options:**
+__**mount_options:**__
 
-_Optional:_ options to the mount command.<br>
+__Optional:__ options to the mount command.<br>
 Please ommit the '-o'.<br>
-_Default:_ ''
-  
-**mount_may_fail:**
+__Default:__ ''
 
-_Optional:_
-- `true`: mount(8) does not fail if `mount_src` is already mounted to mount_mountpoint<br>
+__**mount_may_fail:**__
+
+__Optional:__
+- `true`: mount(8) does not fail if `mount_src` is already mounted to `mount_mountpoint`<br>
 - `false`: default behavior of mount(8)<br>
-_Default:_ false
+__Default:__ false
 
-_**___mount_other_errors:** Please do not change_
+__**___mount_other_errors:** Please do not change__
 
-For completeness: mount(8) result codes other than 0 or 1
+For completeness: mount(8) result codes other than 0 or 1.
 
 Example Playbook
 ----------------
