@@ -30,6 +30,9 @@ galaxy_info:
   - name: Gentoo
     versions:
     - n/a
+  - name: Fedora
+    versions:
+    - all
 
   galaxy_tags:
     - linux
