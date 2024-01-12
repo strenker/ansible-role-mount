@@ -49,4 +49,4 @@ Author Information
 ------------------
 
 Stefan Trenker<br>
-E-Mail: strenker63@gmail.com
+E-Mail: strenker63 at gmail.com
