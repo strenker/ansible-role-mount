@@ -25,7 +25,7 @@ _Default:_ ''
 **mount_may_fail:**
 
 _Optional:_
-- `true`: mount(8) does not fail if mount_src is already mounted to mount_mountpoint<br>
+- `true`: mount(8) does not fail if `mount_src` is already mounted to mount_mountpoint<br>
 - `false`: default behavior of mount(8)<br>
 _Default:_ false
 
