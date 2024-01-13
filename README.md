@@ -1,7 +1,7 @@
 mount
 =====
 
-Simple version of Linux `mount(8)` command.
+Simple version of Linux _**`mount(8)`**_ command.
 
 Role Variables
 --------------
@@ -25,14 +25,14 @@ _Default:_ ''
 _**mount_may_fail:**_
 
 _Optional:_
-- `true`: mount(8) does not fail if `mount_src` is already mounted to `mount_mountpoint`<br>
-- `false`: default behavior of mount(8)<br>
+- `true`: `mount(8)` does not fail if `mount_src` is already mounted to `mount_mountpoint`<br>
+- `false`: default behavior of `mount(8)`<br>
 
 _Default:_ `false`
 
 _**___mount_other_errors:** Please do not change_
 
-For completeness: mount(8) result codes other than 0 or 1.
+For completeness: `mount(8)` result codes other than 0 or 1.
 
 Example Playbook
 ----------------
