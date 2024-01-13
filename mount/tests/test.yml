@@ -1,5 +1,0 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - { role: mount, mount_src: "/home/stefan/Dokumente/Stefan/MRT/MRT-HWS-2018-06-22.iso", mount_mountpoint: "/mnt/tmp", mount_options: "ro,loop", mount_may_fail: false }

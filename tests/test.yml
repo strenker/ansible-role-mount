@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - { role: mount, mount_src: "Patrh to some file or device", mount_mountpoint: "path to directory", mount_options: "some options as in mount(8) call", mount_may_fail: false }

@@ -16,8 +16,10 @@
 - ansible.builtin.debug:
     msg:
       - "Return code: {{ mount_result.rc|default('n/a') }}"
-      - "Stdout: {{ mount_result.stdout_lines|default('') }}"
-      - "Stderr: {{ mount_result.stderr_lines|default('') }}"
+      - "Stdout:"
+      - "{{ mount_result.stdout_lines|default('') }}"
+      - "Stderr:"
+      - "{{ mount_result.stderr_lines|default('') }}"
     verbosity: 0
 
 ...
