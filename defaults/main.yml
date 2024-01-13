@@ -3,26 +3,26 @@
 
 # mount_src:
 #   Source path of what will me mounted.
-#   Reativ path names are relative to ansible_user
+#   Relative path names are relative to ansible_user.
 mount_src:        ''
 
 # mount_mountpoint:
 #   Destination directory where to be mounted.
-#   Reativ path names are relative to ansible_user
+#   Relative path names are relative to ansible_user.
 mount_mountpoint: ''
 
 # mount_options:
 #   Optional options to the mount command.
-#   Please ommit the '-o'
+#   Please ommit the '-o'.
 mount_options:    ''
 
 # mount_may_fail:
-#   - true: mount does not fail if mount_src is already mounted to mount_mountpoint
-#   - false: default behavior of mount
+#   - true: mount(8) does not fail if mount_src is already mounted to mount_mountpoint.
+#   - false: default behavior of mount(8).
 mount_may_fail:   false
 
-# _mount_other_errors: _Please do not change_
-#   mount result codes other than 0 or 1
+# _mount_other_errors: _Please do not change_.
+#   mount(8) result codes other than 0 or 1.
 ___mount_other_errors: [ 2, 4, 8, 16, 32, 64 ]
 
 ...
