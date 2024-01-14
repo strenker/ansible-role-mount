@@ -1,4 +1,4 @@
-mount(8)
+mount
 =====
 
 Simple version of Linux **`mount(8)`** command.
