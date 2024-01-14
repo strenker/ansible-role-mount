@@ -34,7 +34,7 @@ _**___mount_other_errors:** Please do not change_
 
 For completeness: `mount(8)` result codes other than 0 or 1.
 
-Example Playbook
+2. Example Playbook
 ----------------
 
 This example mounts an ISO-File read-only and it does not bail out, if the file is already mounted 
@@ -46,12 +46,12 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
         - { role: mount, mount_src: "Absolute path to File", mount_mountpoint: "/mnt/iso", mount_options: "ro,loop", mount_may_fail: true }
 
-License
+3. License
 -------
 
 GPLv3
 
-Author Information
+4. Author Information
 ------------------
 
 Stefan Trenker<br>
