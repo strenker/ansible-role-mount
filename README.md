@@ -3,7 +3,7 @@ mount
 
 Simple version of Linux **_mount(8)_** command.
 
-Role Variables xxx
+Role Variables
 --------------
 
 _**mount_src:**_
