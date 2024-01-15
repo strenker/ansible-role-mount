@@ -1,7 +1,7 @@
 mount
 =====
 
-Simple version of Linux __**`mount(8)`**__ command.
+Simple version of Linux _**`mount(8)`**_ command.
 
 Role Variables
 --------------
