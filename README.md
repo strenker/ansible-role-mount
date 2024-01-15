@@ -1,7 +1,7 @@
 mount
 =====
 
-Simple version of Linux _**`mount(8)`**_ command.
+Ansible role which implements a simple version of Linux _**`mount(8)`**_ command.
 
 Role Variables
 --------------
